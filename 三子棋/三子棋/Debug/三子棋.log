@@ -1,0 +1,4 @@
+﻿  main.c
+e:\vs文件\projects\三子棋\三子棋\main.c(13): warning C4013: “printf”未定义；假设外部返回 int
+e:\vs文件\projects\三子棋\三子棋\main.c(23): warning C4013: “system”未定义；假设外部返回 int
+  三子棋.vcxproj -> E:\VS文件\Projects\三子棋\Debug\三子棋.exe

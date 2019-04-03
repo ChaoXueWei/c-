@@ -1,0 +1,8 @@
+﻿  main.c
+main.c(99): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\vs2013\VC\include\stdio.h(283) : 参见“scanf”的声明
+main.c(124): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\vs2013\VC\include\stdio.h(283) : 参见“scanf”的声明
+  正在生成代码
+  已完成代码的生成
+  三子棋.vcxproj -> E:\VS文件\Projects\三子棋\Release\三子棋.exe
