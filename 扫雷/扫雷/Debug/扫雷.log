@@ -1,0 +1,6 @@
+﻿  main.c
+e:\vs文件\projects\扫雷\扫雷\main.c(10): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\vs2013\vc\include\stdio.h(283) : 参见“scanf”的声明
+e:\vs文件\projects\扫雷\扫雷\main.c(156): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\vs2013\vc\include\stdio.h(283) : 参见“scanf”的声明
+  扫雷.vcxproj -> E:\VS文件\Projects\扫雷\Debug\扫雷.exe
