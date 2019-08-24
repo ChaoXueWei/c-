@@ -1,0 +1,10 @@
+#pragma once
+#ifndef _SORT_H_
+#define _SORT_H_
+void BubbleSort(int*, int);//√∞≈›≈≈–Ú
+void SelectSort(int*, int);//—°‘Ò≈≈–Ú
+void InsertSort(int*,int);//≤Â»Î≈≈–Ú
+void ShellSort(int*, int);//œ£∂˚≈≈–Ú
+void MergeSort(int*, int);//πÈ≤¢≈≈–Ú
+void QuickSort(int*, int);//øÏÀŸ≈≈–Ú
+#endif
