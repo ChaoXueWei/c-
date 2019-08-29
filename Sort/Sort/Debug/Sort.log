@@ -1,6 +1,4 @@
 ﻿  sort.c
-e:\vs2017\repos\sort\sort\sort.c(87): warning C4101: “k”: 未引用的局部变量
-  test.c
-e:\vs2017\repos\sort\sort\test.c(23): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-  正在生成代码...
-  Sort.vcxproj -> E:\vs2017\repos\Sort\Debug\Sort.exe
+e:\vs文件\github\github_vs\sort\sort\sort.c(218): warning C4013: “printf”未定义；假设外部返回 int
+e:\vs文件\github\github_vs\sort\sort\sort.c(221): warning C4013: “putchar”未定义；假设外部返回 int
+  Sort.vcxproj -> E:\VS文件\Github\github_vs\Sort\Debug\Sort.exe

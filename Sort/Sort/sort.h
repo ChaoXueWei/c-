@@ -6,5 +6,8 @@ void SelectSort(int*, int);//选择排序
 void InsertSort(int*,int);//插入排序
 void ShellSort(int*, int);//希尔排序
 void MergeSort(int*, int);//归并排序
+void HeapSort(int* src, int n);//堆排序
 void QuickSort(int*, int);//快速排序
+void QuickingNonR(int*src, int n);//非递归实现快速排序
+
 #endif
