@@ -1,0 +1,11 @@
+﻿  List.c
+  test.c
+e:\vs2017\repos\list\list\test.c(45): warning C4013: “printf”未定义；假设外部返回 int
+e:\vs2017\repos\list\list\test.c(46): warning C4047: “函数”:“LinkList”与“LinkList *”的间接级别不同
+e:\vs2017\repos\list\list\test.c(46): warning C4024: “ListIsEmpty”: 形参和实参 1 的类型不同
+e:\vs2017\repos\list\list\test.c(60): warning C4047: “函数”:“LinkList”与“LinkList *”的间接级别不同
+e:\vs2017\repos\list\list\test.c(60): warning C4024: “ListIsEmpty”: 形参和实参 1 的类型不同
+e:\vs2017\repos\list\list\test.c(76): warning C4047: “函数”:“LinkList”与“LinkList *”的间接级别不同
+e:\vs2017\repos\list\list\test.c(76): warning C4024: “GetListElem”: 形参和实参 1 的类型不同
+  正在生成代码...
+  List.vcxproj -> E:\vs2017\repos\List\Debug\List.exe
