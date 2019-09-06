@@ -37,23 +37,25 @@ void TestList()
 void TestLink()
 {
 	LinkList list;
+	LinkList list2;
 	ListDataType e;
-	int length;
-	bool empty;
+	/*int length;
+	bool empty;*/
 	ListInit(&list);
-	length = GetListLength(list);
+	ListInit(&list2);
+	/*length = GetListLength(list);
 	printf("链表长度为：%d\n", length);
 	empty = ListIsEmpty(&list);
-	printf("链表为空？%d\n", empty);
-	InsertList(&list, 1, 1);
-	InsertList(&list, 1, 2);
-	InsertList(&list, 1, 3);
+	printf("链表为空？%d\n", empty);*/
+	InsertList(&list, 1, 7);
+	InsertList(&list, 1, 6);
+	InsertList(&list, 1, 5);
 	InsertList(&list, 1, 4);
-	InsertList(&list, 4, 5);
-	InsertList(&list, 6, 6);
-	InsertList(&list, 7, 7);
+	InsertList(&list, 1, 3);
+	InsertList(&list, 1, 2);
+	InsertList(&list, 1, 1);
 	PrintList(list);
-	empty = Locate_exist_Elem(list, 9);
+	/*empty = Locate_exist_Elem(list, 9);
 	printf("链表中存在9？%d\n", empty);
 	empty = Locate_exist_Elem(list, 5);
 	printf("链表中存在5？%d\n", empty);
@@ -67,8 +69,8 @@ void TestLink()
 	printf("链表长度为：%d\n", length);
 	printf("删除第1个的元素值为%d\n", e);
 	empty = Locate_exist_Elem(list, e);
-	printf("链表中存在%d？%d\n", e,empty);
-	PrintList(list);
+	printf("链表中存在%d？%d\n", e,empty);*/
+	/*PrintList(list);
 	DeleteList(&list, 4, &e);
 	length = GetListLength(list);
 	printf("链表长度为：%d\n", length);
@@ -77,9 +79,21 @@ void TestLink()
 	PrintList(list);
 	ListClear(&list);
 	length = GetListLength(list);
-	printf("链表长度为：%d\n", length);
+	printf("链表长度为：%d\n", length);*/
+	
+	InsertList(&list2, 1, 12);
+	InsertList(&list2, 1, 9);
+	InsertList(&list2, 1, 5);
+	InsertList(&list2, 1, 4);
+	InsertList(&list2, 1, 2);
+
+	PrintList(list2);
+	combineLinkList(list->next,list2->next);
 	PrintList(list);
+
 	ListDestory(&list);
+	ListDestory(&list2);
+
 }
 
 

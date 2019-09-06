@@ -30,5 +30,7 @@ int GetListLength(LinkList list);//获取线性表长度
 ListDataType *GetListElem(LinkList list, int i, ListDataType *e);//取第i个元素给e返回
 Status Locate_exist_Elem(LinkList list, ListDataType e);//list链表中是否存在e元素
 void PrintList(LinkList list);//打印链表函数
+ListNode*combineLinkList(ListNode*list1, ListNode* list2);//合并
+
 
 #endif

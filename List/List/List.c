@@ -148,3 +148,53 @@ void PrintList(LinkList list)
 	}
 	printf("NULL\n");
 }
+
+void SortInsertList(ListNode*pHead,ListDataType e)
+{
+	assert(pHead != NULL);
+	ListNode*cur = (ListNode*)malloc(sizeof(ListNode));
+	ListNode*new = cur;
+	cur->next = pHead;
+	int flag = 0;
+	while (cur->next!= NULL)
+	{
+		if (cur->next->data >= e)
+		{
+			ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+			newNode->data = e;
+			newNode->next = cur->next;
+			cur->next = newNode;
+			flag = 1;
+			break;
+		}
+		else
+		{
+			cur = cur->next;
+		}
+	}
+	if (flag == 0)
+	{
+		ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+		newNode->data = e;
+		newNode->next = NULL;
+		cur->next = newNode;
+	}
+	free(new);
+}
+ListNode*combineLinkList(ListNode*list1,ListNode* list2)
+{
+	if (list1 == NULL || list2 == NULL)//如果一个为NULL,直接返回另一个链表
+	{
+		return list1 == NULL ? list2 : list1;
+	}
+	ListNode*cur = list1;
+	while (list2!=NULL&&cur!=NULL)
+	{
+		if (!Locate_exist_Elem(cur, list2->data))//判断list2->data在list1中是否存在
+		{
+			SortInsertList(cur,list2->data);//插入该元素
+		}
+		list2 = list2->next;
+	}
+	return list1;
+}
