@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "queue", "queue\queue.vcxproj", "{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Debug|x64.ActiveCfg = Debug|x64
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Debug|x64.Build.0 = Debug|x64
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Debug|x86.ActiveCfg = Debug|Win32
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Debug|x86.Build.0 = Debug|Win32
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Release|x64.ActiveCfg = Release|x64
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Release|x64.Build.0 = Release|x64
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Release|x86.ActiveCfg = Release|Win32
+		{AB4762E2-F3ED-42AE-9B30-2CCE4F1A354D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1F9B772-D454-4F84-8045-7C5A771652D6}
+	EndGlobalSection
+EndGlobal
