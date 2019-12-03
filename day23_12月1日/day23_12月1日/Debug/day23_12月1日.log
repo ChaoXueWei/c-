@@ -1,0 +1,5 @@
+﻿  计算字符串的距离.cpp
+e:\vs文件\projects\competitiontrain\expereport\day23_12月1日\day23_12月1日\计算字符串的距离.cpp(24): warning C4018: “<”: 有符号/无符号不匹配
+e:\vs文件\projects\competitiontrain\expereport\day23_12月1日\day23_12月1日\计算字符串的距离.cpp(26): warning C4018: “<”: 有符号/无符号不匹配
+e:\vs文件\projects\competitiontrain\expereport\day23_12月1日\day23_12月1日\计算字符串的距离.cpp(28): warning C4018: “>=”: 有符号/无符号不匹配
+  day23_12月1日.vcxproj -> E:\VS文件\Projects\CompetitionTrain\ExpeReport\day23_12月1日\Debug\day23_12月1日.exe
