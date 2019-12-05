@@ -1,0 +1,3 @@
+﻿  main.cpp
+e:\vs文件\projects\cpp\进程调度算法\进程调度算法\main.cpp(27): warning C4091: “typedef ”: 没有声明变量时忽略“process”的左侧
+  进程调度算法.vcxproj -> E:\VS文件\Projects\cpp\进程调度算法\Debug\进程调度算法.exe
