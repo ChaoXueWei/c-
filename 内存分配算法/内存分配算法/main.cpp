@@ -6,8 +6,7 @@
 分配空白块
 
 */
-#if 01
-
+#if 1
 #include <iostream>
 #include <iomanip>
 #include <cstdio>
@@ -43,6 +42,7 @@ void InitMem()
 		cin >> mm.beginAddr >> mm.mmSize;
 		mm.endAddr = mm.beginAddr + mm.mmSize;
 		g_IdleMemory.insert(pair<int, memory>(mm.beginAddr, mm));
+		//对于输入的判断，防止出现以下数据 0 100  50  30这种内存冲突的情况
 		/*pp=g_IdleMemory.find(mm.beginAddr);
 		map<int, memory>::iterator pre=--pp;
 		pp++;
@@ -65,6 +65,10 @@ void showMemory()
 	}
 }
 //首次适应算法
+/*
+有个问题，当内存分配后，只改变了value的beginddr,虽然不影响后续通算法的分配，但是后面换一种算法分配时有可能出错
+最好还是将key值也改变（删除再插入），
+*/
 void fristFit(int appliSize)
 {
 	int flag = 0;
@@ -180,21 +184,120 @@ void worstFit(int appliSize)
 }
 
 //首次循环适应算法
-void cycleFirstFit(int application)
+void cycleFirstFit(int appliSize)
 {
-
+	//先找到第一个，然后再
+	static map<int, memory>::iterator start_p = g_IdleMemory.begin();
+	map<int, memory>::iterator pp = start_p;
+	int i = g_IdleMemory.size();
+	int mmflag = 0;
+	cout << "分配前的空白内存表：" << endl;
+	showMemory();
+	for (; i >= 0;i--)
+	{
+		if (pp->second.mmSize >= appliSize)
+		{
+			mmflag = 1;
+			if ((pp->second.mmSize - appliSize) >= g_minInterDeb)
+			{
+				pp->second.mmSize -= appliSize;
+				pp->second.beginAddr += appliSize;
+			}
+			else
+			{
+				pp=g_IdleMemory.erase(pp);
+				if (pp != g_IdleMemory.end())
+				{
+					break;
+				}
+			}
+			/*if (pp == g_IdleMemory.end())
+			{
+			pp = g_IdleMemory.begin();
+			}*/
+		}
+		if (pp != g_IdleMemory.end())
+		{
+			pp++;
+			if (pp == g_IdleMemory.end())
+			{
+				pp = g_IdleMemory.begin();
+			}
+		}
+		else
+		{
+			pp = g_IdleMemory.begin();
+		}
+		if (mmflag == 1)
+		{
+			break;
+		}
+	}
+	start_p = pp;
+	if (mmflag == 0)//分配失败
+	{
+		cout << "分配失败!" << endl;
+	}
+	else
+	{
+		cout << "分配后的内存表：" << endl;
+		showMemory();
+	}
+}
+int menu()
+{
+	int clect;
+	cout << "***********************************" << endl;
+	cout << "********     1.FirstFit    ********" << endl;
+	cout << "********     2.CycFirFit   ********" << endl;
+	cout << "********     3.BestFit     ********" << endl;
+	cout << "********     4.WorstFit    ********" << endl;
+	cout << "********     0.Exit        ********" << endl;
+	cout << "***********************************" << endl;
+	cout << "Please enter your choice:" ;
+	while (cin >> clect)
+	{
+		if (clect >= 0 && clect <= 4)
+		{
+			return clect;
+		}
+		else
+		{
+			cout << "输入失败，请重新输入：";
+		}
+	}
+	return clect;
 }
 int main()
 {
 	int appliSize;
 	InitMem();
+	int select;
 	while (1)
 	{
+		select = menu();
 		cout << "请输入要申请的内存大小：";
 		cin >> appliSize;
-		//fristFit(appliSize);
-		//bestFit(appliSize);
-		worstFit(appliSize);
+		switch (select)
+		{
+		case 1 :
+			fristFit(appliSize);
+			break;
+		case 2:
+			cycleFirstFit(appliSize);
+			break;
+		case 3:
+			bestFit(appliSize);
+			break;
+		case 4:
+			worstFit(appliSize);
+			break;
+		case 0:
+			exit(0);
+			break;
+		default:
+			//
+		}
 	}
 	return 0;
 }
