@@ -1,0 +1,8 @@
+﻿  main.cpp
+e:\vs文件\projects\cpp\banker's algorithm\banker's algorithm\main.cpp(25): warning C4018: “<”: 有符号/无符号不匹配
+e:\vs文件\projects\cpp\banker's algorithm\banker's algorithm\main.cpp(37): warning C4018: “<”: 有符号/无符号不匹配
+e:\vs文件\projects\cpp\banker's algorithm\banker's algorithm\main.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
+e:\vs文件\projects\cpp\banker's algorithm\banker's algorithm\main.cpp(96): warning C4018: “<”: 有符号/无符号不匹配
+e:\vs文件\projects\cpp\banker's algorithm\banker's algorithm\main.cpp(171): warning C4018: “<”: 有符号/无符号不匹配
+e:\vs文件\projects\cpp\banker's algorithm\banker's algorithm\main.cpp(223): warning C4018: “<”: 有符号/无符号不匹配
+  Banker's Algorithm.vcxproj -> E:\VS文件\Projects\cpp\Banker's Algorithm\Debug\Banker's Algorithm.exe
