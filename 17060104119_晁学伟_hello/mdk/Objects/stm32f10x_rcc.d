@@ -1,0 +1,10 @@
+.\objects\stm32f10x_rcc.o: ..\stdlib\stm32f10x_rcc.c
+.\objects\stm32f10x_rcc.o: ..\stdlib\stm32f10x_rcc.h
+.\objects\stm32f10x_rcc.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
+.\objects\stm32f10x_rcc.o: ..\cmsis\CoreSupport\core_cm3.h
+.\objects\stm32f10x_rcc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f10x_rcc.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\system_stm32f10x.h
+.\objects\stm32f10x_rcc.o: ..\usr\stm32f10x_conf.h
+.\objects\stm32f10x_rcc.o: ..\stdlib\stm32f10x_gpio.h
+.\objects\stm32f10x_rcc.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
+.\objects\stm32f10x_rcc.o: ..\stdlib\stm32f10x_rcc.h
